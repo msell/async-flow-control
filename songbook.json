@@ -1,0 +1,5 @@
+[
+    {'name':'The Beatles',songs['Revolution', 'Come Together', 'Yellow Submarine', 'Rocky Raccoon', 'Hey Jude']},
+    {'name':'Led Zepplin',songs['Black Dog', 'Tangerine', 'Stairway to Heaven', 'Communication Breakdown', 'Moby Dick']},
+    {'name':'Jimi Hendrix',songs['Hey Joe', 'Red House', 'Sandcastles', 'Foxy Lady', 'Purple Haze']}
+]
