@@ -17,10 +17,7 @@ var addSong = function(name,artistId, callback){
 
 var artists = JSON.parse(fs.readFileSync('./songbook.json','utf-8'));
 
-
-async.waterfall([
-    function(cb){addArtist(artists[0],cb)},
-    function(cb){addArtist(artists[1],cb)},
-    function(cb){addArtist(artists[2],cb)}
-]
+async.waterfall(artists.map(function(artist){
+    return function(cb){addArtist(artist,cb)}
+})
 );
